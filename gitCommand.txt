@@ -1,6 +1,12 @@
-echo "# gitCommand" >> README.md
+# Git Command SSH
+add path C:\Program Files\Git\
+now you can win+r and type -> git-bash
+
+# Git Login Command
 git config --global user.name "yourUsername"
 git config --global user.email "youremail@example.com"
+
+# Git init
 git init
 git add .
 git commit -m "first commit"
@@ -21,3 +27,10 @@ to del ssh key from agent THIS IS NOT DELETE FILE COMMAND
 ssh-add -D
 ssh -T git@github.com
 chmod 400 ~/.ssh/id_rsa
+
+# ETC
+# Custom Git Command
+to check .bashrc file
+ls -a ~
+nano ~/.bashrc
+alias cls='clear'

@@ -1,5 +1,9 @@
 # Git Login Command
 <br>
+add path C:\Program Files\Git\
+<br>
+now you can win+r and type -> `git-bash`
+<br>
 git config --global user.name "yourUsername"
 <br>
 git config --global user.email "youremail@example.com"
@@ -41,3 +45,12 @@ ssh-add -D
 ssh -T git@github.com
 <br>
 chmod 400 ~/.ssh/id_rsa
+
+# ETC
+<br>
+# Custom Git Command
+<br>
+to check .bashrc file
+ls -a ~
+nano ~/.bashrc
+alias cls='clear'
