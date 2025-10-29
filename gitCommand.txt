@@ -1,4 +1,6 @@
 echo "# gitCommand" >> README.md
+git config --global user.name "yourUsername"
+git config --global user.email "youremail@example.com"
 git init
 git add .
 git commit -m "first commit"
@@ -9,3 +11,13 @@ git push -u origin main
 git remote add origin https://github.com/examples/examples.git
 git branch -M main
 git push -u origin main
+
+# Git SSH key (Git Bash)
+eval $(ssh-agent -s)
+ssh-keygen -t ed25519 -C "youremail@example.com"
+ssh-add E:/Git/.ssh/id_rsa
+ssh-add -l
+to del ssh key from agent THIS IS NOT DELETE FILE COMMAND
+ssh-add -D
+ssh -T git@github.com
+chmod 400 ~/.ssh/id_rsa
